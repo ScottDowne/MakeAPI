@@ -87,6 +87,16 @@ Make = function Make( options ) {
         });
         return this;
       },
+      withUrl: function( url ) {
+        this.searchFilters.push({
+          query: {
+            field: {
+              url: url
+            }
+          }
+        });
+        return this;
+      },
       withTags: function( tags, execution ) {
         this.searchFilters.push({
           terms: {

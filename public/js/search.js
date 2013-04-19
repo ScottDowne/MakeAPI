@@ -1,6 +1,6 @@
  document.addEventListener( "DOMContentLoaded", function() {
   var make = Make({
-    makeAPI: "http://localhost:5000"
+    makeAPI: "http://mighty-harbor-6211.herokuapp.com/"
   });
 
   var makeTitle = document.getElementById( "make-title" ),
